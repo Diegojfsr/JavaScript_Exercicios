@@ -1,0 +1,102 @@
+
+
+Variáveis no Javascript: var, let e const
+
+
+const
+A palavra-chave const serve para criar váriáveis que não variam. 
+Um exemplo de declaração de constante é:
+
+const nome = "Letícia";
+const idade = 20;
+
+
+
+
+var e let
+
+Quando criamos uma variável com var, ela existe dentro do escopo da função onde ela foi criada. 
+Já uma variável declarada com let, existe apenas dentro do escopo onde ela foi 
+criada (pode ser um if, um for, ou só um { e } aleatório). 
+Veja o código abaixo:
+
+var bananas = 5;
+let abacaxis = 5;
+
+if(bananas <10){
+   var faltamBananas = 10 - bananas;
+}
+if(abacaxis <10){
+   let faltamAbacaxis = 10 - abacaxis;
+}
+console.log(`Faltam ${faltamBananas} bananas para 10 bananas
+e ${faltamAbacaxis} abacaxis para 10 abacaxis.`);
+
+
+var bananas e let abacaxis estão disponiveis em todo o escopo do programa.
+Pois bananas atua sobre escopo de funcao e como nao temos uma funcao especifica
+ela atua no escopo global. E o mesmo acontece com abacaxis já que nao temos um escopo especificado.
+
+Agora...
+Veja a variável faltamBananas, que está declarada dentro de uma estrutura if. 
+Essa variável vai estar disponível para o console.log(); pois ela está declarada 
+na mesma "função" que o if, que é o contexto global de execução.
+
+Agora...
+A variável faltamAbacaxis; ela existe somente dentro do escopo em que ela foi declarada, 
+o escopo de um if, ou seja, entre os {} referentes ao if. 
+Então ela deixa de existir fora desse escopo. 
+Logo, não será possível acessar essa variável no console.log().
+
+
+
+
+Enfim...
+Podemos criar "zonas de variáveis" no nosso código usando let e 
+criando um escopo no código.
+Por exemplo:
+
+let abacaxis = 3;
+{
+let uvas = 4;
+let limoes = 8;
+var laranjas = 10;
+}
+console.log(abacaxis,uvas,limoes,laranjas);
+
+Lembrando: 
+Variáveis declaradas com let só existem dentro do escopo em que foram delcadaras. 
+Esse código só será capaz de imprimir as variáveis abacaxis, porque esta variável 
+está no mesmo escopo da função console.log() e laranjas, porque a variável laranjas 
+está declarada com var, portanto sua existência diz respeito à função que ela se encontra, 
+não ao escopo. Já as variáveis uvas e limoes deixam de existir assim que o escopo é fechado, 
+e por isso não podem ser acessadas fora deste escopo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
