@@ -13,7 +13,7 @@
   <p float="center">
     <a href="https:"> <img src="https://github.com/Diegojfsr/JavaScript_Exercicios/blob/main/img/Ex1.jpg" width="250"/></a>
     <a href="https:"> <img src="https://github.com/Diegojfsr/JavaScript_Exercicios/blob/main/img/Ex2.jpg" width="250"/></a>
-    <a href="https:"> <img src="https://github.com/Diegojfsr/JavaScript_Exercicios/blob/main/img/Ex3.jpg" width="250"/></a>
+    <a href="https://github.com/Diegojfsr/Exercicios_JavaScript_HoraDeCodar"> <img src="https://github.com/Diegojfsr/JavaScript_Exercicios/blob/main/img/Ex3.jpg" width="250"/></a>
     <a href="https:"> <img src="https://github.com/Diegojfsr/JavaScript_Exercicios/blob/main/img/Ex4.jpg" width="250"/></a>
   </p>
 
